@@ -29,7 +29,3 @@ Install through your mod manager, or copy `PortalSoundControl.dll` into `BepInEx
 ## Troubleshooting
 
 Search `BepInEx/LogOutput.log` for `Portal Sound Control`. It lists the portal audio sources and teleport effect prefabs it found. If a portal sound is still audible, send those lines.
-
-## Status
-
-Untested in-game.
