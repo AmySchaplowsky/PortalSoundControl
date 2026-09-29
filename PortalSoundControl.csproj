@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>PortalSoundControl</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <ValheimDir Condition="'$(ValheimDir)' == ''">C:\Program Files (x86)\Steam\steamapps\common\Valheim</ValheimDir>
+    <BepInExCore Condition="'$(BepInExCore)' == ''">$(ValheimDir)\BepInEx\core</BepInExCore>
+    <Managed>$(ValheimDir)\valheim_Data\Managed</Managed>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Plugin.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="$(BepInExCore)\BepInEx.dll" />
+    <Reference Include="$(Managed)\assembly_valheim.dll" />
+    <Reference Include="$(Managed)\UnityEngine.dll" />
+    <Reference Include="$(Managed)\UnityEngine.CoreModule.dll" />
+    <Reference Include="$(Managed)\UnityEngine.AudioModule.dll" />
+  </ItemGroup>
+</Project>

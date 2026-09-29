@@ -1,0 +1,9 @@
+{
+  "name": "PortalSoundControl",
+  "version_number": "0.1.0",
+  "website_url": "",
+  "description": "Mute portal sounds or set their volume. Covers the portal hum and the teleport sound effects. Client-side.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2351"
+  ]
+}
